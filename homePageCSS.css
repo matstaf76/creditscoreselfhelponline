@@ -1,0 +1,73 @@
+/* CSS for larger screens */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 20px; /* Adjust this value to make the font larger */
+    font-weight: bold; /* Makes the font thicker */
+    background-color: #0b770b; /* A light shade of Green */
+    color: #81f6f0; /* Navy Blue for text */
+    text-align: center; /* Aligns text to the center */
+    /* Add your background image here */
+    background-image: url('images/Cartoon_ConstructionWorkers_Building_Dollarsign.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header, nav, main, footer {
+    padding: 1em;
+    margin: auto; /* Centers block-level elements */
+    width: 80%; /* You can adjust this value as needed */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+nav ul li a {
+    color: #eeeb0afd; /* White for navigation links */
+}
+
+button {
+    background-color: #FF0000; /* Red for buttons */
+    color: #ffffff; /* White for button text */
+}
+
+/* Change the color of visited links to red */
+a:visited {
+    color: red;
+}
+
+a:link {
+    color: #eeeb0afd;
+}
+
+/* CSS for tablets */
+@media (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 1em;
+    }
+}
+
+/* CSS for mobile phones */
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 0.5em;
+    }
+}
