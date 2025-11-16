@@ -1,0 +1,31 @@
+<style type="text/css">
+            .bodyBody {
+                margin: 10px;
+                font-size: 1.50em;
+            }
+            .divHeader {
+                text-align: right;
+                border: 1px solid;
+            }
+            .divMyReturnAddress {
+                text-align: left;
+				float: right;
+            }
+			.divCompanyReturnAddress {
+                text-align: left;
+                float: left;
+            }
+            .divSubject {
+              	clear: both;
+                font-weight: bold;
+                padding-top: 80px;
+			}
+			.divContents { 
+				text-indent: 20%;
+				clear: both;
+            }			
+            
+            .divAdios {
+                text-align: left;
+                padding-top: 50px;
+            }
