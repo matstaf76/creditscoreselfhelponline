@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 20px; /* Adjust this value to make the font larger */
+    font-weight: bold; /* Makes the font thicker */
+    background-color: #0b770b; /* A shade of Green */
+    color: #85d3ed; /* Navy Blue for text */
+    text-align: center; /* Aligns text to the center */    
+}
+
+header, nav, main, footer {
+    margin: auto; /* Centers block-level elements */
+    width: 80%; /* You can adjust this value as needed */
+    padding: 1em;
+}
+
+nav {
+   /* background-color: #8B4513;  Saddle Brown for navigation bar */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+nav ul li a, main a {
+    color: #eeeb0afd; /* White for navigation links */
+}
+
+main ul {
+    text-align: left;
+}
+
+button {
+    background-color: #FF0000; /* Red for buttons */
+    color: #eeeb0afd; /* White for button text */
+}
+
+.bold-and-large {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
