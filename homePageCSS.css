@@ -1,73 +1,46 @@
-/* CSS for larger screens */
+/* Global responsive base — fluid across all screen sizes */
+*, *::before, *::after { box-sizing: border-box; }
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    font-size: 20px; /* Adjust this value to make the font larger */
-    font-weight: bold; /* Makes the font thicker */
-    background-color: #0b770b; /* A light shade of Green */
-    color: #81f6f0; /* Navy Blue for text */
-    text-align: center; /* Aligns text to the center */
-    /* Add your background image here */
+    font-size: clamp(1rem, 0.9rem + 0.5vw, 1.25rem); /* fluid 16px–20px */
+    font-weight: bold;
+    background-color: #0b770b; /* Green */
+    color: #81f6f0;
+    text-align: left; /* was center — centered body copy caused misaligned text */
     background-image: url('images/Cartoon_ConstructionWorkers_Building_Dollarsign.jpeg');
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll; /* was fixed — fixed breaks on iOS Safari */
     background-size: cover;
+    overflow-wrap: break-word;
 }
 
 header, nav, main, footer {
+    width: min(92%, 760px); /* was 80% — fluid on phones, readable cap on large screens */
+    margin-inline: auto;
     padding: 1em;
-    margin: auto; /* Centers block-level elements */
-    width: 80%; /* You can adjust this value as needed */
 }
+
+header, footer, h1 { text-align: center; }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 1em;
-}
-
-nav ul li a {
-    color: #eeeb0afd; /* White for navigation links */
-}
+nav ul li a { color: #eeeb0afd; }
+a:link { color: #eeeb0afd; }
+a:visited { color: red; }
 
 button {
-    background-color: #FF0000; /* Red for buttons */
-    color: #ffffff; /* White for button text */
+    background-color: #FF0000;
+    color: #ffffff;
 }
 
-/* Change the color of visited links to red */
-a:visited {
-    color: red;
-}
-
-a:link {
-    color: #eeeb0afd;
-}
-
-/* CSS for tablets */
-@media (max-width: 768px) {
-    body {
-        font-size: 18px;
-    }
-
-    nav ul li {
-        display: block;
-        margin-bottom: 1em;
-    }
-}
-
-/* CSS for mobile phones */
-@media (max-width: 480px) {
-    body {
-        font-size: 16px;
-    }
-
-    nav ul li {
-        display: block;
-        margin-bottom: 0.5em;
-    }
-}
+img { max-width: 100%; height: auto; }

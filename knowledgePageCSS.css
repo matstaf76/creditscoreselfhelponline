@@ -1,44 +1,41 @@
+/* Global responsive base — fluid across all screen sizes */
+*, *::before, *::after { box-sizing: border-box; }
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    font-size: 20px; /* Adjust this value to make the font larger */
-    font-weight: bold; /* Makes the font thicker */
-    background-color: #0b770b; /* A shade of Green */
-    color: #85d3ed; /* Navy Blue for text */
-    text-align: center; /* Aligns text to the center */    
+    font-size: clamp(1rem, 0.9rem + 0.5vw, 1.25rem); /* fluid 16px–20px */
+    font-weight: bold;
+    background-color: #0b770b;
+    color: #85d3ed;
+    text-align: left; /* was center — centered body copy caused misaligned text */
+    overflow-wrap: break-word;
 }
 
 header, nav, main, footer {
-    margin: auto; /* Centers block-level elements */
-    width: 80%; /* You can adjust this value as needed */
+    width: min(92%, 760px); /* was 80% — fluid on phones, readable cap on large screens */
+    margin-inline: auto;
     padding: 1em;
 }
 
-nav {
-   /* background-color: #8B4513;  Saddle Brown for navigation bar */
-}
+header, footer, h1 { text-align: center; }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 1em;
-}
-
-nav ul li a, main a {
-    color: #eeeb0afd; /* White for navigation links */
-}
-
-main ul {
-    text-align: left;
-}
+nav ul li a, main a { color: #eeeb0afd; }
+main ul { text-align: left; }
 
 button {
-    background-color: #FF0000; /* Red for buttons */
-    color: #eeeb0afd; /* White for button text */
+    background-color: #FF0000;
+    color: #eeeb0afd;
 }
 
 .bold-and-large {
@@ -46,3 +43,4 @@ button {
     font-size: 1.5em;
 }
 
+img { max-width: 100%; height: auto; }
