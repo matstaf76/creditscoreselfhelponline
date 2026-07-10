@@ -64,3 +64,9 @@ img { max-width: 100%; height: auto; }
     background-color: #ddd;
     color: black;
 }
+
+h1 {
+    font-size: clamp(1.4rem, 1rem + 2.5vw, 2.4rem); /* fluid heading: fits phones, caps on desktop */
+    line-height: 1.15;
+}
+h2 { font-size: clamp(1.15rem, 0.95rem + 1.2vw, 1.6rem); }
